@@ -1,0 +1,20 @@
+V3 — REDESIGN COM MAIS IMPACTO USANDO AS IMAGENS EXISTENTES
+
+Nesta versão NÃO foram criadas nem substituídas imagens.
+
+Foram usados os mesmos arquivos:
+- assets/images/hero-business.svg
+- assets/images/about-business.svg
+- assets/images/gallery-1.svg
+- assets/images/gallery-2.svg
+- assets/images/gallery-3.svg
+
+O impacto visual foi aumentado por:
+- hero com imagem maior e protagonista
+- enquadramento e composição editorial
+- moldura escura e destaque verde
+- seção Sobre com recorte mais forte
+- galeria em composição assimétrica
+- sombras, overlays e contraste
+- responsividade mobile preservada
+- cache-busting CSS v=3.0-images
