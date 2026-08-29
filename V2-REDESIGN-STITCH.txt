@@ -1,0 +1,26 @@
+V2 REDESIGN STITCH — SITE ESSENCIAL PERSONAL TRAINER
+
+Esta versão foi feita sobre o ZIP mais recente enviado pelo usuário.
+
+O que foi preservado:
+- conteúdo e textos existentes
+- config.js e dados do questionário
+- JavaScript e funcionalidades
+- seções e ordem do site
+- assets existentes
+- HTML/CSS/JS puro, sem Tailwind
+
+O que mudou visualmente:
+- hero com composição e contraste muito mais fortes
+- identidade Technical Energy
+- verde esmeralda + slate
+- cards e botões redesenhados
+- seção Sobre com tratamento editorial
+- Diferenciais em bloco escuro
+- CTA em faixa verde
+- contato e rodapé reforçados
+- responsividade revisada
+- cache-busting no CSS (?v=2.0-stitch)
+
+Para publicar no GitHub Pages:
+substitua os arquivos do repositório pelo CONTEÚDO deste ZIP.
