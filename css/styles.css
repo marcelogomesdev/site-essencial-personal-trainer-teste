@@ -721,3 +721,27 @@ body{background:var(--background);}
     transform:none;
   }
 }
+
+
+/* =========================================================
+   V4 — Fotografias reais
+   ========================================================= */
+.visual-shell img,
+.media-card img,
+.gallery-grid img{
+  image-rendering:auto;
+}
+.visual-shell img{
+  object-position:center 38%;
+}
+.media-card img{
+  object-position:center 42%;
+}
+.gallery-grid img:nth-child(1){object-position:center 42%;}
+.gallery-grid img:nth-child(2){object-position:center 35%;}
+.gallery-grid img:nth-child(3){object-position:center 40%;}
+
+@media (max-width:640px){
+  .visual-shell img{object-position:center center;}
+  .media-card img{object-position:center center;}
+}

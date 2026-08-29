@@ -1,0 +1,22 @@
+V4 — FOTOS REAIS
+
+As ilustrações/bonecos das áreas principais foram substituídos por fotografias reais.
+
+Fontes das fotos:
+1. Hero — Gilson Gomes / Unsplash
+   https://unsplash.com/photos/woman-exercising-with-trainer-in-a-gym-81dmvezMVfE
+
+2. Sobre — Vitaly Gariev / Unsplash
+   https://unsplash.com/photos/trainer-and-client-discussing-workout-plan-in-gym-qX5QzpDQJPk
+
+3. Galeria — Gilson Gomes / Unsplash
+   https://unsplash.com/photos/trainer-assisting-woman-with-resistance-band-exercise-ZcleeG3CQrw
+
+4. Galeria — NEXA BLACK / Unsplash
+   https://unsplash.com/photos/a-man-standing-in-a-gym-with-his-arms-crossed-O_sz7Lngbzc
+
+5. Galeria — Sergio Kian / Unsplash
+   https://unsplash.com/photos/a-man-in-a-white-shirt-is-in-a-gym-NmhmXvG2rIw
+
+As páginas consultadas indicam uso gratuito sob a Unsplash License.
+As imagens são carregadas diretamente do CDN do Unsplash para manter boa qualidade e reduzir o peso do site.
