@@ -1,0 +1,24 @@
+SITE ESSENCIAL — REDESIGN STITCH APLICADO
+
+Este pacote contém os arquivos modificados:
+- index.html
+- css/styles.css
+- js/config.js
+- js/app.js
+
+IMPORTANTE:
+Este ZIP foi preparado para substituir/mesclar esses arquivos no projeto original publicado.
+Mantenha a pasta assets/ do projeto original (imagens, ícones e favicon), porque o redesign preserva os mesmos caminhos de assets.
+
+O que foi aplicado:
+- identidade "Technical Energy" do Stitch
+- Montserrat nos títulos e Inter no corpo
+- paleta esmeralda + slate
+- header translúcido
+- hero com padrão pontilhado sutil
+- cards com borda leve e hover
+- seção de diferenciais em slate escuro
+- CTA em esmeralda
+- melhorias mobile e touch targets
+- sem Tailwind, Bootstrap, React, Vue ou frameworks
+- conteúdo e funcionalidades originais preservados

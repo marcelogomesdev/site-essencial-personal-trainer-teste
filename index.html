@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#006c49">
   <meta name="description" content="Personal trainer em Brasília com acompanhamento presencial e consultoria online para emagrecimento, hipertrofia, condicionamento e iniciantes.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Lucas Andrade Personal Trainer | Treino Personalizado em Brasília">
@@ -14,21 +14,19 @@
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/config.js"></script>
   <script defer src="js/app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
   <header class="site-header" id="topo">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Ir para o início">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-text" data-bind="company.name">Lucas Andrade Personal Trainer</span>
       </a>
-
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#servicos">Serviços</a>
         <a href="#sobre">Sobre</a>
@@ -36,14 +34,11 @@
         <a href="#depoimentos" data-section-link="testimonials">Depoimentos</a>
         <a href="#contato">Contato</a>
       </nav>
-
       <a class="btn btn-sm btn-primary header-cta" data-link="whatsapp" target="_blank" rel="noopener noreferrer">Fale conosco</a>
-
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-
     <div class="mobile-menu" id="mobile-menu" hidden>
       <nav aria-label="Navegação mobile">
         <a href="#servicos">Serviços</a>
@@ -58,6 +53,7 @@
 
   <main id="conteudo">
     <section class="hero section" id="inicio">
+      <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span><span data-bind="hero.eyebrow">Atendimento que entende. Soluções que entregam.</span></span>
@@ -71,7 +67,6 @@
             </a>
           </div>
         </div>
-
         <div class="hero-visual reveal reveal-delay">
           <div class="visual-shell">
             <img src="assets/images/hero-business.svg" alt="Personal trainer orientando aluno durante treino de força" width="760" height="640" fetchpriority="high">
@@ -98,7 +93,7 @@
         <div class="content-block reveal reveal-delay">
           <span class="section-kicker">Sobre mim</span>
           <h2 data-bind="about.title">Experiência para tornar escolhas mais simples e resultados mais consistentes.</h2>
-          <p data-bind="about.text">Acreditamos que um bom atendimento começa por entender o que realmente importa para cada cliente. Por isso, combinamos atenção, conhecimento e execução cuidadosa para oferecer soluções que façam sentido hoje e continuem relevantes amanhã.</p>
+          <p data-bind="about.text">Acreditamos que um bom atendimento começa por entender o que realmente importa para cada cliente.</p>
           <div class="about-points">
             <div><span>01</span><p><strong>Avaliação do seu momento</strong> antes de definir o treino.</p></div>
             <div><span>02</span><p><strong>Planejamento personalizado</strong> para objetivo, rotina e nível.</p></div>
@@ -109,7 +104,7 @@
       </div>
     </section>
 
-    <section class="section" id="diferenciais">
+    <section class="section section-dark" id="diferenciais">
       <div class="container">
         <div class="center-heading reveal">
           <span class="section-kicker">Por que treinar comigo</span>
@@ -182,7 +177,6 @@
         <p data-bind="footer.description">Soluções profissionais, atendimento próximo e compromisso com resultados que fazem sentido.</p>
         <div class="social-links optional-inline" data-section="social">
           <a data-link="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-          
         </div>
       </div>
       <div class="footer-column"><h3>Navegação</h3><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></div>

@@ -6,13 +6,11 @@
 
   const getByPath = (obj, path) => path.split('.').reduce((acc, key) => acc?.[key], obj);
 
-  // Conteúdo textual centralizado
   document.querySelectorAll('[data-bind]').forEach((el) => {
     const value = getByPath(config, el.dataset.bind);
     if (value !== undefined && value !== null) el.textContent = value;
   });
 
-  // SEO básico
   if (config.seo?.title) document.title = config.seo.title;
   const description = document.querySelector('meta[name="description"]');
   const ogTitle = document.querySelector('meta[property="og:title"]');
@@ -21,7 +19,6 @@
   if (ogTitle && config.seo?.title) ogTitle.content = config.seo.title;
   if (ogDescription && config.seo?.description) ogDescription.content = config.seo.description;
 
-  // Links dinâmicos
   const message = encodeURIComponent(config.contact.whatsappMessage || 'Olá! Gostaria de mais informações.');
   const links = {
     whatsapp: `https://wa.me/${config.contact.whatsapp}?text=${message}`,
@@ -30,14 +27,12 @@
     instagram: config.contact.instagram,
     linkedin: config.contact.linkedin
   };
-
   Object.entries(links).forEach(([key, href]) => {
     document.querySelectorAll(`[data-link="${key}"]`).forEach((el) => {
       if (href) el.setAttribute('href', href);
     });
   });
 
-  // Seções opcionais sem espaços residuais
   Object.entries(config.sections || {}).forEach(([section, enabled]) => {
     document.querySelectorAll(`[data-section="${section}"], [data-section-link="${section}"]`).forEach((el) => {
       el.hidden = !enabled;
@@ -45,7 +40,6 @@
     });
   });
 
-  // Ícones SVG embutidos para os serviços
   const icons = {
     spark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.5 5.2L19 9l-5.5 1.8L12 16l-1.5-5.2L5 9l5.5-1.8L12 2Zm7 12 .8 2.7L22 18l-2.2 1.3L19 22l-.8-2.7L16 18l2.2-1.3L19 14Z"/></svg>',
     shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4.5 5v5.8c0 4.8 3.1 9.2 7.5 10.7 4.4-1.5 7.5-5.9 7.5-10.7V5L12 2Zm-1.1 13.4-3-3 1.4-1.4 1.6 1.6 3.8-3.8 1.4 1.4-5.2 5.2Z"/></svg>',
@@ -88,7 +82,6 @@
     `).join('');
   }
 
-  // Header e menu mobile
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -117,7 +110,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // Reveal com respeito a prefers-reduced-motion
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll('.reveal');
   if (reduceMotion || !('IntersectionObserver' in window)) {
